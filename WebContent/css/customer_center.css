@@ -60,7 +60,12 @@ section.notice {
 }
 
 
-
+/*  
+.board-table tbody .hidden {
+  선택된 행에 스타일 적용
+  display: none;
+}
+ */
 #board-search .search-window {
   padding: 15px 0;
   background-color: #f9f7f9;
@@ -158,6 +163,16 @@ section.notice {
 .board-table tbody th p{
   display: none;
 }
+
+.board-table tbody tr.hidden{
+  display: none;
+}
+
+.board-table tbody tr:nth-child(even) {
+  
+  background-color: #f1f1f1;
+}
+
 
 .btn {
   display: inline-block;

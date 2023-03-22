@@ -36,7 +36,7 @@
                     <li><a href="javascript:void(0);" onclick="openPopup_service();">서비스 이용약관</a></li>
                     <li><a href="javascript:void(0);" onclick="openPopup_privacy();">개인정보 처리방침</a></li>
                     <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">입점/제휴 문의</a></li>
-                    <li><a href="http://localhost:8046/Shopping_Mall/util/company_introduce.jsp" target="_blank">회사소개</a></li>
+                    <li><a href="<%=request.getContextPath()%>/util/company_introduce.jsp" target="_blank">회사소개</a></li>
                 </ul>
             </div>
             <div id="infobox">
@@ -104,7 +104,7 @@ function openPopup_service() {
     var page_left = Math.ceil((window.screen.width - page_width)/2);
     var page_top = Math.ceil((window.screen.height - page_height)/2);
 
-window.open("http://localhost:8046/Shopping_Mall/util/service.jsp", "certificate",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
+window.open("<%=request.getContextPath()%>/util/service.jsp", "certificate",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
 
 }
 
@@ -117,7 +117,7 @@ function openPopup_privacy() {
     var page_left = Math.ceil((window.screen.width - page_width)/2);
     var page_top = Math.ceil((window.screen.height - page_height)/2);
 
-window.open("http://localhost:8046/Shopping_Mall/util/privacy.jsp", "certificate",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
+window.open("<%=request.getContextPath()%>/util/privacy.jsp", "certificate",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
 
 }
 
@@ -130,7 +130,7 @@ function openPopup_certificate() {
     var page_left = Math.ceil((window.screen.width - page_width)/2);
     var page_top = Math.ceil((window.screen.height - page_height)/2);
 
-window.open("http://localhost:8046/Shopping_Mall/util/certificate.jsp", "certificate",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
+window.open("<%=request.getContextPath()%>/util/certificate.jsp", "certificate",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
 
 }
     

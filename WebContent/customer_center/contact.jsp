@@ -2,6 +2,8 @@
     pageEncoding="UTF-8"%>
 <jsp:include page="../include/header.jsp" />
 <link rel="stylesheet" href="../css/customer_center.css">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="../js/cs.js"></script>
 
 <section class="notice">
 
@@ -42,58 +44,104 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
+                <tr onclick="toggleContent(this)">
                     <td>8</td>
                     <th><a href="#">문의사항 8번입니다.</a></th>
                     <th>홍길동</th>
                     <td>2017.06.15</td>
                 </tr>
-                <tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                	<td></td>
+                </tr>
+                <tr onclick="toggleContent(this)">
                     <td>7</td>
                     <th><a href="#!">문의사항 7번입니다.</a></th>
                     <th>임시</th>
                     <td>2017.06.15</td>
                 </tr>
-                <tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                	<td></td>
+                </tr>
+                <tr onclick="toggleContent(this)">
                     <td>6</td>
                     <th><a href="#!">문의사항 6번입니다.</a></th>
                     <th>작성자</th>
                     <td>2017.06.15</td>
                 </tr>
-                <tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                	<td></td>
+                </tr>
+                <tr onclick="toggleContent(this)">
                     <td>5</td>
                     <th><a href="#!">문의사항 5번입니다.</a></th>
                     <th>이름</th>
                     <td>2017.06.15</td>
                 </tr>
-                <tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                	<td></td>
+                </tr>
+                <tr onclick="toggleContent(this)">
                     <td>4</td>
                     <th><a href="#!">공문의사항 4번입니다.</a></th>
                     <th>입니다</th>
                     <td>2017.06.15</td>
                 </tr>
-                <tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                	<td></td>
+                </tr>
+                <tr onclick="toggleContent(this)">
                     <td>3</td>
-                    <th>
-                      <a href="#!">문의사항 3번입니다.</a>
+                    
+                      <th><a href="#!">문의사항 3번입니다.</a></th>
                       <th>람쥐</th>
-                      
-                    </th>
                     <td>2017.07.13</td>
                 </tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                	<td></td>
+                </tr>
 
-                <tr>
+                <tr onclick="toggleContent(this)">
                     <td>2</td>
                     <th><a href="#!">이용해주셔서 감사합니다</a></th>
                     <th>썬더</th>
                     <td>2017.06.15</td>
                 </tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                	<td></td>
+                </tr>
 
-                <tr>
+                <tr onclick="toggleContent(this)">
                     <td>1</td>
                     <th><a href="#!">이용해주셔서 감사합니다</a></th>
                     <th></th>
                     <td>2017.06.15</td>
+                </tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                	<td></td>
                 </tr>
                 </tbody>
             </table>
