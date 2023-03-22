@@ -37,20 +37,27 @@
 	    position: fixed;
 		z-index: 2;
 	}
+	footer {
+		bottom: 0;
+		z-index: 5;
+		position: relative;
+	}
 	.wrap {
 		margin-top: -110px;
+		min-height: 100%;
+	    position: relative;
 	}
 	.main { 
 		width: 1400px;
+		height: 2000px; /* UI 개발할 때 각 페이지에 맡게 해당 영역 px수치 수정해야함 */
 		position : relative;
 		top: 105px;
 		left: 50%;
         transform: translateX( -50% );
 		background-color: rgb(179, 255, 213);  /* 영역 보기 편하라고 배경색 지정함 : 연초록 */
-		margin: 0px;
 	}
 	section {
-		height: 100%;
+		height: 2000px; /* UI 개발할 때 각 페이지에 맡게 해당 영역 px수치 수정해야함 */
 		background-color: rgb(236, 226, 202); /* 영역 보기 편하라고 배경색 지정함 : 연주황 */
 	}
 	/* 클리어 */
@@ -60,7 +67,6 @@
 	/* 밑의 영역부터 css시작 */
 	.container {
 		width: 100%;
-		height: 935px;
 	}
 	/* 캐러셀 */
 	#carouselExampleControls {
@@ -129,7 +135,7 @@
                     <li><a href="javascript:void(0);" onclick="openPopup_service();">서비스 이용약관</a></li>
                     <li><a href="javascript:void(0);" onclick="openPopup_privacy();">개인정보 처리방침</a></li>
                     <li><a href="javascript:void(0);" onclick="openPopup_inquiry();">입점/제휴 문의</a></li>
-                    <li><a href="http://localhost:8046/Shopping_Mall/util/company_introduce.jsp" target="_blank">회사소개</a></li>
+                    <li><a href="http://localhost:<%=request.getContextPath()%>/Shopping_Mall/util/company_introduce.jsp" target="_blank">회사소개</a></li>
                 </ul>
             </div>
             <div id="infobox">
@@ -169,53 +175,53 @@
 		<%-- footer 부분 --%>
 		// 서비스 이용약관 텍스트 클릭시 새창 열기
 		function openPopup_service() {
-	        var page_width = '525';
+	        var page_width = '560';
 	        var page_height = '650';
 	    
 	        // 팝업을 가운데 위치시키기 위해 아래와 같이 값 구하기
 	        var page_left = Math.ceil((window.screen.width - page_width)/2);
 	        var page_top = Math.ceil((window.screen.height - page_height)/2);
 	
-	    window.open("http://localhost:8046/Shopping_Mall/util/service.jsp", "service",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
+	    window.open("<%=request.getContextPath()%>/util/service.jsp", "service",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
 	    
 	    }
 	    
 		// 개인정보 처리 텍스트 클릭시 새창 열기
 		function openPopup_privacy() {
-	        var page_width = '525';
+	        var page_width = '590';
 	        var page_height = '555';
 	    
 	        // 팝업을 가운데 위치시키기 위해 아래와 같이 값 구하기
 	        var page_left = Math.ceil((window.screen.width - page_width)/2);
 	        var page_top = Math.ceil((window.screen.height - page_height)/2);
 	
-	    window.open("http://localhost:8046/Shopping_Mall/util/privacy.jsp", "privacy",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
+	    window.open("<%=request.getContextPath()%>/util/privacy.jsp", "privacy",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
 	    
 	    }
 		
 		// 입점/제휴 문의 텍스트 클릭시 새창 열기
 		function openPopup_inquiry() {
-	        var page_width = '525';
+	        var page_width = '580';
 	        var page_height = '555';
 	    
 	        // 팝업을 가운데 위치시키기 위해 아래와 같이 값 구하기
 	        var page_left = Math.ceil((window.screen.width - page_width)/2);
 	        var page_top = Math.ceil((window.screen.height - page_height)/2);
 	
-	    window.open("http://localhost:8046/Shopping_Mall/util/inquiry.jsp", "inquiry",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
+	    window.open("<%=request.getContextPath()%>/util/inquiry.jsp", "inquiry",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
 	    
 	    }
 		
 		// 인증 마크 클릭시 새창 열기
 	    function openPopup_certificate() {
-	        var page_width = '460';
-	        var page_height = '380';
+	        var page_width = '510';
+	        var page_height = '430';
 	    
 	        // 팝업을 가운데 위치시키기 위해 아래와 같이 값 구하기
 	        var page_left = Math.ceil((window.screen.width - page_width)/2);
 	        var page_top = Math.ceil((window.screen.height - page_height)/2);
 	
-	    window.open("http://localhost:8046/Shopping_Mall/util/certificate.jsp", "certificate",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
+	    window.open("<%=request.getContextPath()%>/util/certificate.jsp", "certificate",'width='+ page_width +', height='+ page_height +', left=' + page_left + ', top='+ page_top);
 	    
 	    }
 	</script>

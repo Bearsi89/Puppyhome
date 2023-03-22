@@ -3,7 +3,8 @@
 
 <jsp:include page="../include/header.jsp" />
 <link rel="stylesheet" href="../css/customer_center.css">
-
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="../js/cs.js"></script>
 <section class="notice">
 
 
@@ -40,52 +41,94 @@
                     <th scope="col" class="th-title">제목</th>
                   	<th scope="col" class="th-date">등록일</th> 
                 </tr>
+                 <tr></tr>
                 </thead>
                 <tbody>
-                <tr>
+                <tr onclick="toggleContent(this)">
                     <td>8</td>
-                    <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                    <th><a href="#">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
                     <td>2017.06.15</td>
                 </tr>
-                <tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                </tr>
+                <tr onclick="toggleContent(this)">
                     <td>7</td>
-                    <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                    <th><a href="#">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
                     <td>2017.06.15</td>
                 </tr>
-                <tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                </tr>
+                <tr onclick="toggleContent(this)">
                     <td>6</td>
-                    <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                    <th><a href="#">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
                     <td>2017.06.15</td>
                 </tr>
-                <tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                </tr>
+                <tr onclick="toggleContent(this)">
                     <td>5</td>
-                    <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                    <th><a href="#">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
                     <td>2017.06.15</td>
                 </tr>
-                <tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                </tr>
+                <tr onclick="toggleContent(this)">
                     <td>4</td>
-                    <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                    <th><a href="#">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
                     <td>2017.06.15</td>
+                    
                 </tr>
-                <tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                </tr>
+                <tr onclick="toggleContent(this)">
                     <td>3</td>
                     <th>
-                      <a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
+                      <a href="#">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
                       <p>테스트</p>
                     </th>
                     <td>2017.07.13</td>
                 </tr>
-
-                <tr>
-                    <td>2</td>
-                    <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
-                    <td>2017.06.15</td>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
                 </tr>
 
-                <tr>
-                    <td>1</td>
-                    <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                <tr onclick="toggleContent(this)">
+                    <td>2</td>
+                    <th><a href="#">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
                     <td>2017.06.15</td>
+                </tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
+                </tr>
+
+                <tr onclick="toggleContent(this)">
+                    <td>1</td>
+                    <th><a href="#">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                    <td>2017.06.15</td>
+                </tr>
+                <tr class="hidden">
+                	<td></td>
+                	<td>테스트 페이지 테스트 내용</td>
+                	<td></td>
                 </tr>
                 </tbody>
             </table>
