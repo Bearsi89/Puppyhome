@@ -454,7 +454,7 @@ System.out.println(user_id);
             </div>
         </div>
     </div>
-   
+   <!--수정-->
   <!-- board list area -->
     <div id="board-list">
         <div class="container">
