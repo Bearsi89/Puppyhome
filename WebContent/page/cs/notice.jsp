@@ -86,6 +86,8 @@ section.notice {
   display: none;
 }
  */
+
+ 
 #board-search {
 	margin: auto;
 }
@@ -419,6 +421,7 @@ request.setAttribute("user_id", user_id);
 System.out.println(user_id);
 %>
 <section class="notice">
+	<!-- 테스트 주석-->
 
 <div>
  <ul id="cs_faq_list">
